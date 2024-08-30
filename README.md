@@ -21,7 +21,7 @@ This is a personal Python program designed to automate posting in Facebook group
 - **Manual Intervention**: Due to the nature of Facebook's dynamic UI, the program requires manual clicking on the "Photo/Video" button before it can proceed with posting. The bot will wait 30 seconds after loading the group page, allowing you to make this manual intervention.
 - **Randomization**: The program includes randomized delays to mimic human interaction, reducing the risk of being flagged by Facebook's algorithms.
 
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
 
 ## Disclaimer
 
