@@ -4,6 +4,7 @@ import random
 import tkinter as tk
 from tkinter import ttk
 import threading
+import winsound  # Modul untuk menambahkan bunyi beep
 
 # Variabel untuk kontrol threading
 running = False
@@ -148,6 +149,9 @@ def run_bot():
         if len(links[day][time_of_day]) > 1 and link != links[day][time_of_day][-1]:
             pyautogui.hotkey('ctrl', 't')
             time.sleep(1)
+
+    # Bunyi beep panjang ketika program selesai
+    winsound.Beep(1000, 1000)  # Beep dengan frekuensi 1000 Hz selama 1000 ms (1 detik)
 
 def stop_bot():
     global running
