@@ -28,16 +28,43 @@ def run_bot():
                 'https://www.facebook.com/groups/komunitassupirtrukindonesia'
             ]
         },
-        'Rabu': {
+        'Selasa': {
             'Pagi': [
                 'https://www.facebook.com/groups/185880505117882',
                 'https://www.facebook.com/groups/776837162422332'
             ],
             'Siang': [
-                'https://www.facebook.com/groups/868335030388905'
+                'https://www.facebook.com/groups/868335030388905',
+                'https://www.facebook.com/groups/1452981858164617'
             ],
             'Malam': [
+                'https://www.facebook.com/groups/185880505117882'
+            ]
+        },
+        'Rabu': {
+            'Pagi': [
+                'https://www.facebook.com/groups/452512229583913',
+                'https://www.facebook.com/groups/646832658764868'
+            ],
+            'Siang': [
+                'https://www.facebook.com/groups/183304072340276',
+                'https://www.facebook.com/groups/komunitassupirtrukindonesia'
+            ],
+            'Malam': [
+                'https://www.facebook.com/groups/868335030388905'
+            ]
+        },
+        'Kamis': {
+            'Pagi': [
+                'https://www.facebook.com/groups/776837162422332',
+                'https://www.facebook.com/groups/185880505117882'
+            ],
+            'Siang': [
+                'https://www.facebook.com/groups/1344335369285894',
                 'https://www.facebook.com/groups/1452981858164617'
+            ],
+            'Malam': [
+                'https://www.facebook.com/groups/868335030388905'
             ]
         },
         'Jumat': {
@@ -54,24 +81,42 @@ def run_bot():
                 'https://www.facebook.com/groups/1344335369285894'
             ]
         },
-        'Minggu': {
+        'Sabtu': {
             'Pagi': [
-                'https://www.facebook.com/groups/776837162422332'
-            ],
-            'Siang': [
+                'https://www.facebook.com/groups/776837162422332',
                 'https://www.facebook.com/groups/868335030388905'
             ],
+            'Siang': [
+                'https://www.facebook.com/groups/183304072340276',
+                'https://www.facebook.com/groups/1344335369285894'
+            ],
             'Malam': [
+                'https://www.facebook.com/groups/komunitassupirtrukindonesia'
+            ]
+        },
+        'Minggu': {
+            'Pagi': [
                 'https://www.facebook.com/groups/1452981858164617',
+                'https://www.facebook.com/groups/868335030388905'
+            ],
+            'Siang': [
+                'https://www.facebook.com/groups/646832658764868',
                 'https://www.facebook.com/groups/185880505117882'
+            ],
+            'Malam': [
+                'https://www.facebook.com/groups/1344335369285894',
+                'https://www.facebook.com/groups/776837162422332'
             ]
         }
     }
 
     captions = {
         'Senin': "Awali minggu dengan langkah pasti! 🚛 Butuh bantuan? Saya siap membantu dengan cepat dan rapi. Hubungi WA: 085183107469. Privasi terjaga, hasil memuaskan.",
+        'Selasa': "Jalani hari dengan lancar! Kalau ada urusan, saya siap membantu kapan saja. WA: 085183107469. Hasil cepat, privasi dijaga.",
         'Rabu': "Sedang di perjalanan jauh atau dalam antrean panjang? Jangan khawatir, saya bisa bantu urusan kecil Anda dengan cepat. WA: 085183107469. Hasil pasti, privasi aman.",
+        'Kamis': "Lanjutkan produktivitas Anda, biarkan saya urus hal kecil. WA: 085183107469. Proses cepat, hasil maksimal.",
         'Jumat': "Persiapkan minggu depan dengan tenang. Biar saya bantu urusan Anda hari ini. WA: 085183107469. Proses cepat, hasil memuaskan, privasi dijamin.",
+        'Sabtu': "Hari libur tak berarti pekerjaan berhenti. Saya siap membantu kapan saja. WA: 085183107469. Cepat, rapi, dan aman.",
         'Minggu': "Nikmati akhir pekan tanpa khawatir! Kalau ada urusan yang perlu dibantu, saya siap sedia. WA: 085183107469. Cepat, rapi, dan privasi terjaga."
     }
     
@@ -118,7 +163,7 @@ time_var = tk.StringVar(value='Pagi')
 
 # Dropdown untuk memilih hari
 ttk.Label(root, text="Pilih Hari:").grid(column=0, row=0, padx=10, pady=10)
-day_menu = ttk.Combobox(root, textvariable=day_var, values=['Senin', 'Rabu', 'Jumat', 'Minggu'])
+day_menu = ttk.Combobox(root, textvariable=day_var, values=['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'])
 day_menu.grid(column=1, row=0, padx=10, pady=10)
 
 # Dropdown untuk memilih waktu
